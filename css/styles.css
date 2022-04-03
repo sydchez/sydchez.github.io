@@ -1,0 +1,330 @@
+:root {
+    --paprika: #F2441D;
+    --light-gray: #BFBFBF;
+    --dark-gray:#737373;
+    --charcoal: #404040;
+    --pale-bg:#F2F2F2;
+    --bg:#D9D9D9;
+    /**
+        --pale-bg:#F7F7F7;
+        --dark-gray:#595959;
+        --bg: #e3e1e1;
+        --paprika:#D93D04;
+
+    **/
+}
+
+/*available weights for Clarendon - 700*/
+/*available weights for DIN - 400 (regular), 500 (medium) normal and italic*/
+
+body {
+    font-family: urw-din, sans-serif;
+    font-weight: 400;
+    margin: 2rem;
+    background-color:var(--pale-bg);
+}
+
+section {
+    margin: 1.75rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+/*specialized link styles*/
+.inline {
+    text-decoration: underline;
+    text-decoration-color: var(--paprika);
+}
+
+.inline:hover {
+    color: var(--paprika);
+}
+
+/*text*/
+h1, h2, h3, h4, h5, p{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.25em;
+    font-family: clarendon-urw, serif;
+    font-weight: 700;
+    color: var(--paprika);
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 1.25em;
+    line-height:2.5rem;
+}
+
+h3, h4 {
+    font-weight: 500;
+}
+
+h5 {
+    font-weight:400;
+}
+
+.divider {
+    background-color: var(--bg);
+    height:2px;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.home {
+    background-color: white;
+}
+
+/*top header content*/
+.hero {
+    background-color: white;
+    height: 40rem;
+    display:flex;
+    flex-direction:row;
+    margin-bottom:1.75rem;
+}
+
+.hero-text {
+    display:flex;
+    flex-direction:column;
+    gap: .5rem;
+    justify-content: center;
+    width:50%;
+    padding:4rem;
+
+}
+
+.hero-image {
+    display:flex;
+    flex-direction:row;
+    justify-content: end;
+    width:50%;
+}
+
+.hero img {
+    height:100%;
+}
+
+/*footer content*/
+footer {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+footer span {
+    color: var(--paprika);
+    padding: 0 .25rem 4rem .25rem;
+}
+
+/*list of project case studies to check out*/
+.project-list {
+    display: grid;
+    gap: 1.75rem;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+}
+
+@media (min-width:700px) {
+    .project-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/*individual project cards*/
+.project{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 15rem;
+}
+
+.project img {
+    background-color: var(--bg);
+    width:15rem;
+}
+.project-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+    flex-grow:1;
+}
+
+article:hover {
+    background-color: var(--bg);
+}
+
+/*tiny label on the project cards*/
+.project h5 {
+    margin-bottom:12px;
+    text-transform:uppercase;
+    color: var(--dark-gray)
+}
+
+/*interspersed tags in hero description*/
+.tag {
+    background-color: var(--paprika);
+    padding: .25rem;
+    color:white;
+}
+
+/*navigation*/
+nav li {
+    display: inline;
+    padding-bottom: 1rem;
+    font-family: clarendon-urw, serif;
+    font-weight:700;
+    font-style:normal; 
+    font-size: 1.25rem;
+    color:black;
+}
+
+nav ul {
+    margin: 0; 
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    gap:1.25rem;
+}
+
+nav {
+    border-bottom: .5rem solid var(--paprika);
+    position:fixed;
+    z-index: 10;
+    bottom: 0;
+    left:0;
+    right:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.current-nav {
+    color: var(--paprika);
+}
+
+nav a:hover {
+    color: var(--paprika);
+}
+
+/**social icons in navigation**/
+.social-icons {
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+
+.social {
+    background-color:black;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.social:hover {
+    background-color:var(--paprika);
+}
+
+.social>i {
+    color: white;
+}
+
+.resume-block {
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    flex-direction: column;
+    gap:.25rem;
+    background-color: white;
+    padding:3rem 4rem;
+}
+
+.progression {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items:center;
+    gap: 1.5rem;
+    color: var(--dark-gray);
+    margin-bottom:1rem;
+}
+
+.breakdown-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+}
+
+.breakdown-header h3 {
+    font-family: clarendon-urw, serif;
+    color: var(--paprika);
+}
+
+.dot {
+    width:.75rem;
+    height:.75rem;
+    border-radius:1rem;
+    background-color: var(--paprika);
+    margin: 0 .625rem;
+}
+
+.breakdown-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.stripe {
+    background-color: var(--paprika);
+    width: 4px;
+    margin:0 auto;
+    border-radius:1rem 1rem 0 0;
+    flex-grow: 1;
+}
+
+.breakdown-text {
+    padding: 1rem .5rem 1rem .5rem;
+    display:flex;
+    flex-direction: column;
+}
+
+.breakdown-text p {
+    margin-bottom: 0;
+}
+
+.breakdown-text ul {
+    padding-left:1rem;
+    padding-bottom: 1rem;
+    margin: .25rem; 
+}
+
+.breakdown-text li {
+    padding: 0 0 .5rem 0;
+}
+
+.breakdown-arrow {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width:2rem;
+}
+
+.invisible {
+    fill-opacity: 0;
+    opacity:0;
+}
