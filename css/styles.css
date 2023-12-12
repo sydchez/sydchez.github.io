@@ -1,5 +1,5 @@
 :root {
-    --paprika: #F2441D;
+    --paprika: #D43C0C;
     --light-gray: #BFBFBF;
     --dark-gray:#737373;
     --charcoal: #404040;
@@ -9,7 +9,7 @@
         --pale-bg:#F7F7F7;
         --dark-gray:#595959;
         --bg: #e3e1e1;
-        --paprika:#D93D04;
+        --paprika:#D43C0C;
 
     **/
 }
@@ -22,6 +22,7 @@ body {
     font-weight: 400;
     margin: 2rem;
     background-color:var(--pale-bg);
+    line-height:1.6rem;
 }
 
 section {
@@ -56,6 +57,7 @@ h1 {
     font-family: clarendon-urw, serif;
     font-weight: 700;
     color: var(--paprika);
+    margin-bottom: 1.5rem;
 }
 
 h2 {
@@ -116,7 +118,7 @@ h5 {
 /*footer content*/
 footer {
     text-align: center;
-    margin: 1.5rem 0;
+    margin: 4rem 0 1rem 0;
 }
 
 footer span {
@@ -251,7 +253,20 @@ nav a:hover {
     flex-direction: column;
     gap:.25rem;
     background-color: white;
-    padding:3rem 4rem;
+    padding:4rem 4rem;
+}
+
+.quote {
+    background-color:var(--pale-bg);
+    padding:1rem;
+    margin:.25rem 0;
+}
+
+.quotes-list {
+    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .progression {
@@ -314,7 +329,7 @@ nav a:hover {
 }
 
 .breakdown-text li {
-    padding: 0 0 .5rem 0;
+    padding: 0 0 .6rem 0;
 }
 
 .breakdown-arrow {
