@@ -259,6 +259,7 @@ nav a:hover {
 }
 
 /*sections of resume*/
+
 .resume-block {
     
     width:auto;
@@ -270,6 +271,37 @@ nav a:hover {
     gap:.25rem;
     background-color: white;
     padding:4rem 4rem;
+}
+
+@media (min-width:0px) {
+    .resume-block {
+    
+        width:auto;
+        max-width:800px;
+        min-width:200px;
+        margin-left:auto;
+        margin-right:auto;
+        display:flex;
+        flex-direction: column;
+        gap:.25rem;
+        background-color: white;
+        padding:1.6rem 1.6rem;
+    }    
+}
+
+@media (min-width:641px) {
+    .resume-block {
+    
+        width:auto;
+        max-width:800px;
+        margin-left:auto;
+        margin-right:auto;
+        display:flex;
+        flex-direction: column;
+        gap:.25rem;
+        background-color: white;
+        padding:4rem 4rem;
+    }    
 }
 
 /*pull quotes*/
