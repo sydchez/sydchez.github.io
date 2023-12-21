@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, p{
 
 h1 {
     font-size: 2.25rem;
+    line-height: 2.5rem;
     font-family: clarendon-urw, serif;
     font-weight: 700;
     color: var(--paprika);
@@ -119,7 +120,7 @@ p {
     }
 }
 
-@media (min-width:641px) {
+@media (min-width:961px) {
     .hero {
         background-color: white;
         height: 40rem;
@@ -139,11 +140,12 @@ p {
     .hero-image {
         display:flex;
         flex-direction:row;
-        justify-content: end;
+        justify-content: center;
         width:50%;
     }
     .hero img {
-        height:100%;
+        height: 100%;
+        width: auto;
     }
 }
 
@@ -281,7 +283,7 @@ nav a:hover {
     }
 }
 
-@media (min-width:641px) {
+@media (min-width:961px) {
     .social-icons {
         padding-right: 2rem;
         display: flex;
@@ -329,7 +331,7 @@ nav a:hover {
     }    
 }
 
-@media (min-width:641px) {
+@media (min-width:961px) {
     .resume-block {
     
         width:auto;
