@@ -137,7 +137,7 @@ footer span {
     padding: 0 .25rem 4rem .25rem;
 }
 
-/*list of project case studies to check out*/
+/** list of project case studies to check out
 .project-list {
     display: grid;
     gap: 1.75rem;
@@ -152,7 +152,7 @@ footer span {
 }
 
 
-/*individual project cards*/
+/**individual project cards
 .project{
     display: flex;
     flex-direction: row;
@@ -174,21 +174,23 @@ footer span {
 
 article:hover {
     background-color: var(--bg);
-}
+}**/
 
-/*tiny label on the project cards*/
+/**tiny label on the project cards
 .project h5 {
     margin-bottom:12px;
     text-transform:uppercase;
     color: var(--dark-gray)
 }
+**/
 
-/*interspersed tags in hero description*/
+/**interspersed tags in hero description
 .tag {
     background-color: var(--paprika);
     padding: .25rem;
     color:white;
 }
+**/
 
 /*navigation*/
 nav li {
@@ -256,6 +258,7 @@ nav a:hover {
     color: white;
 }
 
+/*sections of resume*/
 .resume-block {
     
     width:auto;
@@ -269,6 +272,7 @@ nav a:hover {
     padding:4rem 4rem;
 }
 
+/*pull quotes*/
 .quote {
     background-color:var(--pale-bg);
     padding:1rem;
@@ -282,6 +286,7 @@ nav a:hover {
     margin: 0;
 }
 
+/*job progressions at each company*/
 .progression {
     display:flex;
     flex-direction: row;
