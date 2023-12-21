@@ -188,28 +188,15 @@ article:hover {
 **/
 
 /*navigation*/
-@media (min-width:0px) {
-    nav li {
-        display: inline;
-        padding-bottom: 1rem;
-        font-family: clarendon-urw, serif;
-        font-weight:700;
-        font-style:normal; 
-        font-size: .83rem;
-        color:black;
-    }
-}
 
-@media (min-width:641px) {
-    nav li {
-        display: inline;
-        padding-bottom: 1rem;
-        font-family: clarendon-urw, serif;
-        font-weight:700;
-        font-style:normal; 
-        font-size: 1.25rem;
-        color:black;
-    }
+nav li {
+    display: inline;
+    padding-bottom: 1rem;
+    font-family: clarendon-urw, serif;
+    font-weight:700;
+    font-style:normal; 
+    font-size: 1.25rem;
+    color:black;
 }
 
 nav ul {
@@ -229,6 +216,7 @@ nav {
     right:0;
     width: 100%;
     display: flex;
+    align-items:end;
     justify-content: space-between;
 }
 
@@ -241,12 +229,6 @@ nav a:hover {
 }
 
 /**social icons in navigation**/
-.social-icons {
-    padding-right: 2rem;
-    display: flex;
-    flex-direction: row;
-    gap: .5rem;
-}
 
 .social {
     background-color:black;
@@ -257,6 +239,25 @@ nav a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+@media (min-width:0px) {
+    .social-icons {
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+}
+
+@media (min-width:641px) {
+    .social-icons {
+        padding-right: 2rem;
+        display: flex;
+        flex-direction: row;
+        gap: .5rem;
+    }
 }
 
 .social:hover {
