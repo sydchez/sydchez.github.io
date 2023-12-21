@@ -76,11 +76,6 @@ h4 {
     font-size: 1rem;
 }
 
-h5 {
-    font-weight:400;
-    font-size: .83rem;
-}
-
 p {
     font-size: 1rem;
 }
@@ -193,14 +188,28 @@ article:hover {
 **/
 
 /*navigation*/
-nav li {
-    display: inline;
-    padding-bottom: 1rem;
-    font-family: clarendon-urw, serif;
-    font-weight:700;
-    font-style:normal; 
-    font-size: 1.25rem;
-    color:black;
+@media (min-width:0px) {
+    nav li {
+        display: inline;
+        padding-bottom: 1rem;
+        font-family: clarendon-urw, serif;
+        font-weight:700;
+        font-style:normal; 
+        font-size: .83rem;
+        color:black;
+    }
+}
+
+@media (min-width:641px) {
+    nav li {
+        display: inline;
+        padding-bottom: 1rem;
+        font-family: clarendon-urw, serif;
+        font-weight:700;
+        font-style:normal; 
+        font-size: 1.25rem;
+        color:black;
+    }
 }
 
 nav ul {
