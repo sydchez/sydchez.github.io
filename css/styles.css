@@ -17,6 +17,8 @@
 /*available weights for Clarendon - 700*/
 /*available weights for DIN - 400 (regular), 500 (medium) normal and italic*/
 
+HTML {font-size: calc((1vh+1vw)/2)}
+
 body {
     font-family: urw-din, sans-serif;
     font-weight: 400;
