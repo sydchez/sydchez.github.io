@@ -92,34 +92,64 @@ p {
 }
 
 /*top header content*/
-.hero {
-    background-color: white;
-    height: 40rem;
-    display:flex;
-    flex-direction:row;
-    margin-bottom:1.75rem;
+@media (min-width:0px) {
+    .hero {
+        background-color: white;
+        display:flex;
+        flex-direction:column;
+        margin-bottom:1.75rem;
+    }
+     .hero-text {
+        display:flex;
+        flex-direction:column;
+        gap: .5rem;
+        justify-content: center;
+        width:100%;
+        padding-bottom:2rem;
+    
+    }
+    .hero-image {
+        display:flex;
+        flex-direction:row;
+        justify-content: end;
+        width:100%;
+    }
+    .hero img {
+        width:100%;
+    }
 }
 
-.hero-text {
-    display:flex;
-    flex-direction:column;
-    gap: .5rem;
-    justify-content: center;
-    width:50%;
-    padding:4rem;
-
+@media (min-width:641px) {
+    .hero {
+        background-color: white;
+        height: 40rem;
+        display:flex;
+        flex-direction:row;
+        margin-bottom:1.75rem;
+    }
+    .hero-text {
+        display:flex;
+        flex-direction:column;
+        gap: .5rem;
+        justify-content: center;
+        width:50%;
+        padding:4rem;
+    
+    }
+    .hero-image {
+        display:flex;
+        flex-direction:row;
+        justify-content: end;
+        width:50%;
+    }
+    .hero img {
+        height:100%;
+    }
 }
 
-.hero-image {
-    display:flex;
-    flex-direction:row;
-    justify-content: end;
-    width:50%;
-}
 
-.hero img {
-    height:100%;
-}
+
+
 
 /*footer content*/
 footer {
@@ -179,13 +209,13 @@ article:hover {
 }
 **/
 
-/**interspersed tags in hero description
+/*interspersed tags in hero description*/
 .tag {
     background-color: var(--paprika);
     padding: .25rem;
     color:white;
 }
-**/
+
 
 /*navigation*/
 
